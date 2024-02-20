@@ -1,4 +1,4 @@
-function QuestionText({ randomQuestion }) {
+function QuestionText({randomQuestion}) {
   
   return (
     <>
@@ -6,9 +6,9 @@ function QuestionText({ randomQuestion }) {
         {randomQuestion && (
           <div key={randomQuestion.id}>
             <h2>{randomQuestion.text}</h2>
-          </div>
+          </div> 
           )
-        }
+        } 
       </div>
     </>
   )
@@ -17,3 +17,6 @@ function QuestionText({ randomQuestion }) {
 }
 
 export default QuestionText
+
+
+

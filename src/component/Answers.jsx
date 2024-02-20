@@ -1,14 +1,19 @@
 import ButtonAnswer from "./ButtonAnswer"
 
-function Answers({listOfAnswers}) {
+function Answers({properAnswers}) {
+  console.log(properAnswers.answers);
+ 
   return (
-    <ul id="answers">
-      {listOfAnswers.map((answer) => (
-        <ButtonAnswer key={answer.id}>{answer}</ButtonAnswer>
-      ))}
-    </ul>
-    
+    <>
+      <ul id="answers">
+        {properAnswers.answers.map((answer) => (
+          <ButtonAnswer key={answer.id}>{answer}</ButtonAnswer>
+        ))}
+      </ul>
+    </>
   )
 }
 
 export default Answers
+
+
