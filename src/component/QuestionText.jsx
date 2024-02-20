@@ -1,16 +1,8 @@
-function QuestionText({randomQuestion}) {
-  
+function QuestionText({children}) {
   return (
-    <>
-      <div>
-        {randomQuestion && (
-          <div key={randomQuestion.id}>
-            <h2>{randomQuestion.text}</h2>
-          </div> 
-          )
-        } 
-      </div>
-    </>
+    <div>
+      <h2>{children}</h2>
+    </div> 
   )
     
     
