@@ -9,6 +9,3 @@ function QuestionText({children}) {
 }
 
 export default QuestionText
-
-
-

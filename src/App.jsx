@@ -12,9 +12,7 @@ function App() {
     const randomTestId = Math.floor(Math.random() * DUMMY_QUESTION.length);
     const [selectedAnswerId, setSelectedAnswerId] = useState(-1);
 
-    
-
-      function handleClick(answerId) {
+    function handleClick(answerId) {
         setSelectedAnswerId(answerId); 
     }
     
