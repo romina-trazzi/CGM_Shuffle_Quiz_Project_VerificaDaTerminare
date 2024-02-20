@@ -1,12 +1,27 @@
-function ButtonAnswer({isSelected, index, onSelect, children}) {
+function ButtonAnswer({index, isSelected, onSelect, children, result}) {
 
-  return (
+   let classes = "answer"; 
+
+   if (isSelected) {
+      classes += " selected";
+   }
+
+   if (isSelected && result === true) {
+      classes += " correct";
+   } else if (isSelected && result === false) {
+      classes += " wrong";
+   }
+
+   return (
      <div className="answer">
-         <button className={`answer ${isSelected ? 'selected' : ''}`} onClick={() => onSelect(index)}>
+         <button className={classes} onClick={() => onSelect(index)}>
             {children}
          </button>
       </div>
+
    )
+
+   
 
 }
 
