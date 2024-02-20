@@ -1,4 +1,4 @@
-function ButtonAnswer({isSelected, onSelect, children}) {
+function ButtonAnswer({isSelected, index, onSelect, children}) {
 
   return (
      <div className="answer">
